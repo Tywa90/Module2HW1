@@ -9,10 +9,6 @@ namespace LoggerApp.Code
 {
     internal class Starter
     {
-        //fields
-        //properties
-        //constructor
-        //public & private methods
         public void Run()
         {
             Actions action = new Actions();

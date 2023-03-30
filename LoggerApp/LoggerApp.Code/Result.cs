@@ -2,11 +2,8 @@
 {
     internal class Result
     {
-        //fields
-        //properties
         public bool Status { get; set; }
         public string Message { get; set; }
-        //constructor
         public Result()
         {
         }
@@ -19,7 +16,5 @@
             Status = status;
             Message = message;
         }
-        //public & private methods
-
     }
 }

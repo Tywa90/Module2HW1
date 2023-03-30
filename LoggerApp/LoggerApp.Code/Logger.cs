@@ -9,12 +9,8 @@ namespace LoggerApp.Code
 {
     internal class Logger
     {
-        //fields
         private static string logConsole;
         static StringBuilder sb = new StringBuilder();
-        //properties
-        //constructor
-        //public & private methods
 
         public void DisplayLog(LogType type, string message)
         {

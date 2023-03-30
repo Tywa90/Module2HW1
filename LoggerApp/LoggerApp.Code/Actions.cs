@@ -9,19 +9,15 @@ namespace LoggerApp.Code
 {
     internal class Actions
     {
-        //fields
         private readonly string _message1;
         private readonly string _message2;
         public readonly string _message3;
-        //properties
-        //constructor
         public Actions()
         {
             _message1 = "Start method: Method1()";
             _message2 = "Skipped logic in method: Method2()";
             _message3 = "I broke a logic: Method3()";
         }
-        //public & private methods
         public Result Method1()
         {
             Logger _logger = new Logger();
