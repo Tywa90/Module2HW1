@@ -20,7 +20,11 @@ namespace LoggerApp.Code
             _message3 = "I broke a logic: Method3()";
         }
 
-        public string Message3 { get; set; }
+        public string Message3
+        {
+            get { return _message3; }
+        }
+
         public Result Method1()
         {
             Logger logger = new Logger();
