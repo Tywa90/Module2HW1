@@ -13,7 +13,7 @@ namespace LoggerApp.Code
         {
             Actions action = new Actions();
             Result result = new Result();
-            Logger _logger = new Logger();
+            Logger logger = new Logger();
 
             for (int i = 0; i < 100; i++)
             {
@@ -32,16 +32,17 @@ namespace LoggerApp.Code
                         {
                             Logger logger1 = new Logger();
                             string errorMsg = "Action failed by а reason:";
-                            logger1.DisplayLog(LogType.Error, $"{errorMsg} {action._message3}");
+                            logger1.DisplayLog(LogType.Error, $"{errorMsg} {action.Message3}");
                         }
+
                         break;
                     default:
                         Console.WriteLine("No one method enter the switcher");
                         break;
                 }
             }
-            _logger.WriteFile();
-        }
 
+            logger.WriteFile();
+        }
     }
 }

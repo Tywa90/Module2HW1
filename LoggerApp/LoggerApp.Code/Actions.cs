@@ -11,26 +11,30 @@ namespace LoggerApp.Code
     {
         private readonly string _message1;
         private readonly string _message2;
-        public readonly string _message3;
+        private readonly string _message3;
+
         public Actions()
         {
             _message1 = "Start method: Method1()";
             _message2 = "Skipped logic in method: Method2()";
             _message3 = "I broke a logic: Method3()";
         }
+
+        public string Message3 { get; set; }
         public Result Method1()
         {
-            Logger _logger = new Logger();
-            _logger.DisplayLog(LogType.Info, _message1);
-
+            Logger logger = new Logger();
+            logger.DisplayLog(LogType.Info, _message1);
             return new Result(true);
         }
+
         public Result Method2()
         {
-            Logger _logger = new Logger();
-            _logger.DisplayLog(LogType.Warning, _message2);
+            Logger logger = new Logger();
+            logger.DisplayLog(LogType.Warning, _message2);
             return new Result(true);
         }
+
         public Result Method3()
         {
             return new Result(false, _message3);
