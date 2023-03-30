@@ -1,10 +1,13 @@
-﻿namespace LoggerApp.Code
+﻿using static System.Runtime.InteropServices.JavaScript.JSType;
+
+namespace LoggerApp.Code
 {
     internal class Program
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello, World!");
+            Starter startApp = new Starter();
+            startApp.Run();
         }
     }
 }

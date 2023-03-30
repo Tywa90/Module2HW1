@@ -6,7 +6,10 @@ using System.Threading.Tasks;
 
 namespace LoggerApp.Code
 {
-    internal class LogType
+    public enum LogType
     {
+        Error,
+        Warning,
+        Info
     }
 }

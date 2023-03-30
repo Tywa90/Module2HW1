@@ -1,12 +1,25 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace LoggerApp.Code
+﻿namespace LoggerApp.Code
 {
     internal class Result
     {
+        //fields
+        //properties
+        public bool Status { get; set; }
+        public string Message { get; set; }
+        //constructor
+        public Result()
+        {
+        }
+        public Result(bool status)
+        {
+            Status = status;
+        }
+        public Result(bool status, string message)
+        {
+            Status = status;
+            Message = message;
+        }
+        //public & private methods
+
     }
 }
